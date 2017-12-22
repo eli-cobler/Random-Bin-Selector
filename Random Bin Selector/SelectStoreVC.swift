@@ -5,6 +5,7 @@
 //  Created by Eli Cobler on 10/9/17.
 //  Copyright © 2017 Eli Cobler. All rights reserved.
 //
+//  First View, lets user select which store they want the bins from.
 
 import UIKit
 
