@@ -1,4 +1,8 @@
-#text_file = open("/Users/elicobler/Resilio_Sync/Treehouse Swift/Random Bin Selector/Auto_Bin_Insert/insert_bins_statements.txt", "a")
+# This file was used to create the json file as the default database for the various stores to pull from.  
+# Later on the user can change the database as they please but wanted to get a good starting point.
+# That way I didn't have to manually enter all the bins by hand ¯\_(ツ)_/¯
+
+text_file = open("yourtextfile.txt", "a")
 
 yale21st_bins = [  
     "A1A", "A1B", "A1C",
