@@ -5,6 +5,9 @@
 //  Created by Eli Cobler on 10/9/17.
 //  Copyright © 2017 Eli Cobler. All rights reserved.
 //
+//  Provides 3 differnet bins/stock locations for the selected store
+//  For each time you click the get bins buttons
+//  
 
 /* 41st iPhone and Samsung Bins
      iphone = A1A, A1C, A1E, A2A, A2C, A2E, A3A, A3C, A3E
