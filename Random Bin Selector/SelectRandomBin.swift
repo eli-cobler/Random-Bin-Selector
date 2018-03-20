@@ -40,6 +40,8 @@ class SelectRandomBin: UIViewController {
     var removalHandle: UInt?
     var ref: DatabaseReference?
     
+    var navigationBarAppearace = UINavigationBar.appearance()
+    
     // Setting up Labels
     @IBOutlet weak var yourRandomBinsLabel: UILabel!
     @IBOutlet weak var randomBinLabel: UILabel!
@@ -295,10 +297,6 @@ class SelectRandomBin: UIViewController {
             }
         })
         
-    }
-    
-    @IBAction func swipeBacktoSelectStoreVC(_ sender: Any) {
-        performSegue(withIdentifier: "backToSelectStoreVC", sender: (Any).self)
     }
     
     @IBAction func selectRandomBinButton() {
@@ -881,7 +879,7 @@ class SelectRandomBin: UIViewController {
     }
         
     
-    @IBAction func addBinButton() {
+    @IBAction func addOrRemoveBinButton(_ sender: Any) {
         promptForBin()
     }
     

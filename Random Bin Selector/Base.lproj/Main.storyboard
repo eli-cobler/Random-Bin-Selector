@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01T-yU-qep">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xth-Or-JIx">
-                                <rect key="frame" x="20" y="80" width="107" height="21"/>
+                                <rect key="frame" x="20" y="124" width="107" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ggd-X4-730">
-                                <rect key="frame" x="0.0" y="270" width="414" height="216"/>
+                                <rect key="frame" x="0.0" y="292" width="414" height="216"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEm-0G-zYH">
                                 <rect key="frame" x="20" y="616" width="374" height="40"/>
@@ -56,13 +56,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="RcO-Ic-ccI"/>
                     <connections>
                         <outlet property="storePicker" destination="Ggd-X4-730" id="I2P-Da-tHW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="807" y="33"/>
+            <point key="canvasLocation" x="1113.0434782608697" y="32.608695652173914"/>
         </scene>
         <!--Select Random Bin-->
         <scene sceneID="dP4-Rn-Gu1">
@@ -73,7 +74,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwZ-Ya-qLX">
-                                <rect key="frame" x="20" y="80" width="0.0" height="0.0"/>
+                                <rect key="frame" x="20" y="124" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -96,44 +97,28 @@
                                     <action selector="selectRandomBinButton" destination="P59-dJ-ulo" eventType="touchUpInside" id="9KX-Xb-4bP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4D-BZ-1EH">
-                                <rect key="frame" x="20" y="30" width="66" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="&lt; Back"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="backToSelectStoreVC" id="8c2-1f-PmE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRO-Ir-wG9">
-                                <rect key="frame" x="235" y="30" width="159" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Add/Remove Bin"/>
-                                <connections>
-                                    <action selector="addBinButton" destination="P59-dJ-ulo" eventType="touchUpInside" id="jLI-FD-ebD"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="fwZ-Ya-qLX" firstAttribute="top" secondItem="M2D-iq-eGz" secondAttribute="top" constant="60" id="DdB-1l-bzj"/>
-                            <constraint firstItem="t4D-BZ-1EH" firstAttribute="top" secondItem="M2D-iq-eGz" secondAttribute="top" constant="10" id="Djw-rR-8OQ"/>
                             <constraint firstItem="3YW-3k-hGw" firstAttribute="leading" secondItem="M2D-iq-eGz" secondAttribute="leading" constant="20" id="FsS-wo-UKy"/>
                             <constraint firstItem="HGW-tx-65V" firstAttribute="leading" secondItem="M2D-iq-eGz" secondAttribute="leading" constant="20" id="JtT-hd-g6J"/>
                             <constraint firstItem="3YW-3k-hGw" firstAttribute="centerY" secondItem="ehG-gJ-lnd" secondAttribute="centerY" id="W2Y-6O-TOI"/>
                             <constraint firstItem="M2D-iq-eGz" firstAttribute="trailing" secondItem="3YW-3k-hGw" secondAttribute="trailing" constant="20" id="ZTa-xl-TQf"/>
                             <constraint firstItem="M2D-iq-eGz" firstAttribute="bottom" secondItem="HGW-tx-65V" secondAttribute="bottom" constant="80" id="arC-4q-IPx"/>
-                            <constraint firstItem="LRO-Ir-wG9" firstAttribute="top" secondItem="M2D-iq-eGz" secondAttribute="top" constant="10" id="cWU-cX-WLz"/>
                             <constraint firstItem="fwZ-Ya-qLX" firstAttribute="leading" secondItem="M2D-iq-eGz" secondAttribute="leading" constant="20" id="cbl-6T-cHS"/>
-                            <constraint firstItem="M2D-iq-eGz" firstAttribute="trailing" secondItem="LRO-Ir-wG9" secondAttribute="trailing" constant="20" id="mrH-za-7IZ"/>
-                            <constraint firstItem="t4D-BZ-1EH" firstAttribute="leading" secondItem="M2D-iq-eGz" secondAttribute="leading" constant="20" id="oe8-EY-u5X"/>
                             <constraint firstItem="M2D-iq-eGz" firstAttribute="trailing" secondItem="HGW-tx-65V" secondAttribute="trailing" constant="20" id="rRA-4v-RZG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="M2D-iq-eGz"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="phh-ie-Jsc" appends="YES" id="s8L-DF-Qdm"/>
-                        </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="ihL-GX-jaC">
+                        <barButtonItem key="rightBarButtonItem" title="Add/Remove Bin" id="MvV-Vl-9yk">
+                            <connections>
+                                <action selector="addOrRemoveBinButton:" destination="P59-dJ-ulo" id="OlL-uw-COU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="randomBinButtonLabel" destination="HGW-tx-65V" id="6Sh-c1-J6z"/>
                         <outlet property="randomBinLabel" destination="3YW-3k-hGw" id="xWk-2A-jAW"/>
@@ -141,14 +126,26 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uVB-Br-dyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="phh-ie-Jsc">
-                    <rectEdge key="edges" left="YES"/>
-                    <connections>
-                        <action selector="swipeBacktoSelectStoreVC:" destination="P59-dJ-ulo" id="oTd-kq-3l7"/>
-                    </connections>
-                </screenEdgePanGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1599" y="33"/>
+            <point key="canvasLocation" x="1905.7971014492755" y="32.608695652173914"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cS9-ds-2oq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="01T-yU-qep" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eOg-LX-cnf">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sKt-Ll-4py"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1T4-zw-iPY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="355" y="33"/>
         </scene>
     </scenes>
 </document>
