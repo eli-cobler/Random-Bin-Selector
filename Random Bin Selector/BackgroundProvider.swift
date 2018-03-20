@@ -5,6 +5,8 @@
 //  Created by Eli Cobler on 10/9/17.
 //  Copyright © 2017 Eli Cobler. All rights reserved.
 //
+//  Provides a different randomly selected background color
+//  For each time you click the get bins buttons
 
 import UIKit
 import GameKit
